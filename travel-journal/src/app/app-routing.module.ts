@@ -13,8 +13,8 @@ const routes: Routes = [
     loadChildren: './modules/home/home.module#HomeModule',
   },
   {
-    path: 'articles',
-    loadChildren: './modules/articles/articles.module#ArticlesModule',
+    path: 'article',
+    loadChildren: './modules/article/article.module#ArticleModule',
   }
 ];
 
