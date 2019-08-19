@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { ArticleRoutingModule } from './article-routing.module';
-import { ArticleComponent } from './article.component';
+import {ArticleRoutingModule} from './article-routing.module';
+import {ArticleComponent} from './article.component';
 
 
 @NgModule({
@@ -12,4 +12,5 @@ import { ArticleComponent } from './article.component';
     ArticleRoutingModule
   ]
 })
-export class ArticleModule { }
+export class ArticleModule {
+}
