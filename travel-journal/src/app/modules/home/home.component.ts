@@ -36,9 +36,11 @@ export class HomeComponent implements OnInit {
           '\\r\\n\\r\\nAlthough less celebrated, Sri Lanka has one of the richest diversity of amphibians in the world,' +
           ' containing over 106 species of amphibians of over 90 of which are endemic. The country has long claimed to have ' +
           'the highest amphibian species density in the world with a high concentration in the Sinharaja rainforest.',
-        image: 'http://www.traveller.com.au/content/dam/images/h/1/7/9/t/2/image.related.articleLeadwide.620x349.h1783b.png/1541138566539.jpg',
+        image: 'http://www.traveller.com.au/content/dam/images/h/1/7/9/t/2/image.related.articleLeadwide.' +
+          '620x349.h1783b.png/1541138566539.jpg',
         comments: []
-      }, {
+      },
+      {
         author: 'Sajitha Priyankara',
         type: 'Asia',
         tags: ['Cruise Tour', 'Mumbai', 'Taj Mahal'],
@@ -55,8 +57,9 @@ export class HomeComponent implements OnInit {
           'beauty of these places, different but complementary, aboard one of our cruise ships',
         image: 'https://www.costacruises.co.uk/content/dam/costa/inventory-assets/countries/IND/IND.jpg.image.1440.523.high.jpg',
         comments: []
-      }, {
-        author: 'Manikya Senarathne',
+      },
+      {
+        author: 'Sajitha Priyankara',
         type: 'Hiking',
         tags: ['Hiking', 'Camping', 'Nature'],
         title: 'Hike Manigala',
@@ -80,5 +83,4 @@ export class HomeComponent implements OnInit {
       }
     ];
   }
-
 }
