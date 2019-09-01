@@ -1,0 +1,13 @@
+.article {
+  padding: 20px;
+  background: #03bdab;
+  margin: 30px;
+  width: 30%;
+  display: block;
+  float: left;
+  height: 100px;
+}
+
+.article span{
+  background: #fff;
+}
