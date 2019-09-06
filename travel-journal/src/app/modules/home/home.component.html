@@ -1,7 +1,10 @@
 <h1>Recent Posts</h1>
 
 <div *ngFor="let article of articles" class="article"
-     [ngStyle]="{'background' : 'url('+article.image+')'}">
+     [ngStyle]="{'background' : 'url('+article.image+')'}"
+
+     routerLink="/article/{{article.id}}"
+     routerLinkActive="active">
 
   <span>{{article.title}}</span>
   <br>

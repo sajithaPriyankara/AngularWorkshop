@@ -14,4 +14,8 @@ export class ArticleService {
   getArticles(): Observable<Article[]> {
     return this.http.get<Article[]>('http://vzztalks.com:3000/articles');
   }
+
+  getArticle(id: string) {
+    return this.http.get<Article>('http://vzztalks.com:3000/articles/' + id);
+  }
 }

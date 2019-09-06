@@ -1,4 +1,7 @@
 import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {ArticleService} from '../../services/article.service';
+import {Article} from '../../models/article';
 
 @Component({
   selector: 'app-article',
@@ -7,10 +10,19 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ArticleComponent implements OnInit {
 
-  constructor() {
+  article: Article;
+
+  constructor(private route: ActivatedRoute,
+              private articleService: ArticleService) {
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.getArticle();
   }
 
+  getArticle(): void {
+    const id = this.route.snapshot.paramMap.get('id');
+    this.articleService.getArticle(id)
+      .subscribe(article => this.article = article);
+  }
 }
