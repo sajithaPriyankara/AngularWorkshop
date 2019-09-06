@@ -1,12 +1,11 @@
 <h1>Recent Posts</h1>
 
-
 <div *ngFor="let article of articles" class="article"
      [ngStyle]="{'background' : 'url('+article.image+')'}">
 
   <span>{{article.title}}</span>
   <br>
-  <span>by {{article.author}}</span>
+  <span>by {{article.author.name}}</span>
   <br>
   <span>{{article.type}}</span>
   <br>

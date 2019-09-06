@@ -1,7 +1,9 @@
 import {Comment} from './comment';
+import {Author} from './author';
 
 export class Article {
-  author: string;
+  id: string;
+  author: Author;
   type: string;
   tags: string[];
 

@@ -3,7 +3,11 @@ import {Article} from '../models/article';
 
 export const ARTICLES: Article[] = [
   {
-    author: 'Jone Doe',
+    id: '1',
+    author: {
+      id: '11',
+      name: 'Jone Doe'
+    },
     type: 'Nature',
     tags: ['Nature', 'Beaches', 'Ancient cities', 'Wild life'],
     title: 'Trip to Sri Lanka',
@@ -28,7 +32,11 @@ export const ARTICLES: Article[] = [
     comments: []
   },
   {
-    author: 'Sajitha Priyankara',
+    id: '2',
+    author: {
+      id: '22',
+      name: 'Jone Doe'
+    },
     type: 'Asia',
     tags: ['Cruise Tour', 'Mumbai', 'Taj Mahal'],
     title: 'Trip to India',
@@ -46,7 +54,11 @@ export const ARTICLES: Article[] = [
     comments: []
   },
   {
-    author: 'Sajitha Priyankara',
+    id: '3',
+    author: {
+      id: '33',
+      name: 'Jone Doe'
+    },
     type: 'Hiking',
     tags: ['Hiking', 'Camping', 'Nature'],
     title: 'Hike Manigala',
@@ -57,7 +69,11 @@ export const ARTICLES: Article[] = [
     comments: []
   },
   {
-    author: 'Sajitha Priyankara',
+    id: '4',
+    author: {
+      id: '44',
+      name: 'Jone Doe'
+    },
     type: 'Family trips',
     tags: ['Petronas', 'Sunway Lagoon'],
     title: 'Trip to Malaysia',

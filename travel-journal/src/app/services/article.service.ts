@@ -1,16 +1,17 @@
 import {Injectable} from '@angular/core';
 import {Article} from '../models/article';
-import {ARTICLES} from './articles.mock';
+import {Observable} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ArticleService {
 
-  constructor() {
+  constructor(private http: HttpClient) {
   }
 
-  getArticles(): Article[] {
-    return ARTICLES;
+  getArticles(): Observable<Article[]> {
+    return this.http.get<Article[]>('http://vzztalks.com:3000/articles');
   }
 }
